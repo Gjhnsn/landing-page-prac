@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-box {
+    display: flex;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-box a {
+    flex: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    transition: all 0.2s;
+}
+
+.nav-box a:hover {
+    background-color: rgb(236, 172, 152);
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.feature {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.shoe {
+    width: auto;
+    height: 70%;
+    margin-left: 15px;
+    align-self: center;
+}
+
+.text-wrapper {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-right: 0;
+}
+
+.title h1 {
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    align-self: center;
+}
