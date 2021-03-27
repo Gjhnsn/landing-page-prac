@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom right, #ffffff, rgba(236, 171, 152, 0.637));
+    height: 100vh;
 }
 
 .nav-box {
@@ -31,6 +33,7 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
+
 }
 
 .feature {
@@ -39,8 +42,9 @@ body {
     justify-content: space-around;
     height: 80vh;
     width: 80vw;
+    min-width: 620px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.596), rgba(216, 209, 209, 0.61));
     border-radius: 50px;
 }
 
@@ -65,12 +69,13 @@ body {
     font-size: 4em;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
+    align-self: center;
 }
 
 .text p {
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -81,5 +86,92 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    align-self: center;
+    align-self: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(236, 172, 152);
+    color: white;
+    text-decoration: none;
+}
+
+.circle1 {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom left, #ffffffb7, rgb(236, 171, 152));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 55%;
+    left: 5%;
+    z-index: -1;
+}
+
+.circle2 {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to top left, #ffffffc4, rgb(236, 171, 152));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    z-index: -1;
+}
+
+.circle3 {
+    height: 220px;
+    width: 220px;
+    background: linear-gradient(to bottom right, #ffffff96, rgb(236, 171, 152));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3%;
+    left: 65%;
+    z-index: -1;
+}
+
+.circle4 {
+    height: 120px;
+    width: 120px;
+    background: linear-gradient(to top right, #ffffffb2, rgb(236, 171, 152));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1250px) {
+    .shoe {
+        height: 50%;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .shoe {
+        height: 40%;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .shoe {
+        height: 40%;
+        width: auto;
+        align-self: center;
+    }
 }
